@@ -1,0 +1,30 @@
+<div class="sidebar winBg" [ngClass]="isOpen ? '' : 'SideBarClosed'">
+  <app-generic-btn
+    [icon]="'grid_view'"
+    [wfull]="true"
+    [destination]="'dashboard'"
+  >
+    Dashboard
+  </app-generic-btn>
+  <app-generic-btn
+    [wfull]="true"
+    [icon]="'notifications'"
+    [destination]="'notifications'"
+  >
+    Notifications
+  </app-generic-btn>
+  <app-generic-btn
+  [wfull]="true"
+  [icon]="'bolt'"
+  [destination]="'push-notifications'"
+>
+  Notifications
+</app-generic-btn>
+</div>
+<div class="btnContainer">
+  <app-generic-btn
+    [icon]="'menu'"
+    [showTxt]="false"
+    (click)="toggleBarState()"
+  />
+</div>

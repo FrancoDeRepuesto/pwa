@@ -1,0 +1,52 @@
+<div class="pageContainer">
+  <div class="winCol gap6 w200">
+    <h2>Dashboard</h2>
+    <br />
+    <app-generic-btn
+      [wfull]="true"
+      [icon]="'notifications_active'"
+      [enfasis]="true"
+      (click)="requestPermision()"
+      >Activar notificaiones</app-generic-btn
+    >
+    <br />
+    <span>Notifications API</span>
+    <app-generic-btn
+      [wfull]="true"
+      [icon]="'notification_add'"
+      [enfasis]="true"
+      (click)="sendNotification()"
+      >Enviar notificaion</app-generic-btn
+    >
+    <app-generic-btn
+      [wfull]="true"
+      [icon]="'notification_add'"
+      [enfasis]="true"
+      (click)="sendNotificationwithDelay(5)"
+      >Notificaion con delay</app-generic-btn
+    >
+    <app-generic-btn
+      [wfull]="true"
+      [icon]="'notification_add'"
+      [enfasis]="true"
+      (click)="dynamicNotification()"
+      >Notificaion dinamica</app-generic-btn
+    >
+    <br />
+    <span>swPush API</span>
+    <app-generic-btn
+      [wfull]="true"
+      [icon]="'notification_add'"
+      [enfasis]="true"
+      (click)="suscribeToOrders()"
+      >Suscribirse</app-generic-btn
+    >
+    <app-generic-btn
+      [wfull]="true"
+      [icon]="'notifications_active'"
+      [enfasis]="true"
+      (click)="requestPushNotificationsPermision()"
+      >Activar notificaiones</app-generic-btn
+    >
+  </div>
+</div>

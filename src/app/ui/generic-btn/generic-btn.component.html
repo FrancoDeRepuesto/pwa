@@ -1,0 +1,23 @@
+<button
+  [ngClass]="{
+    rounded: rounded,
+    wFull: wfull,
+    enfasis: enfasis,
+    showTxt: showTxt,
+    hideTxt: !showTxt
+  }"
+  [routerLink]="destination"
+>
+  <i class="material-icons-round">
+    {{ icon }}
+  </i>
+  @if (showTxt) {
+  <span>
+    <ng-content />
+  </span>
+  } @if (notifications) {
+  <span class="notiCount">
+    {{ notifications }}
+  </span>
+  }
+</button>

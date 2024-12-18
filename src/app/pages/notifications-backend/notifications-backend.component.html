@@ -1,0 +1,20 @@
+<div class="winCol">
+  <h1>Pedidos en Tiempo Real</h1>
+  @for (order of orders(); track $index) {
+  <div class="winCol winBg wFull">
+    <h3>{{ order.nombre }}</h3>
+    <div class="winCol wFull">
+      @for (pedido of order.pedidos; track $index) {
+      <div class="win gap12">
+        <span style="overflow: hidden; text-overflow: ellipsis; height: 18px; width: 100%;">
+          {{ pedido.producto }}
+        </span>
+        <span style="width: 60px;">
+          ${{ pedido.precio }}
+        </span>
+      </div>
+      }
+    </div>
+  </div>
+  }
+</div>

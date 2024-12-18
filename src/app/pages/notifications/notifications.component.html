@@ -1,0 +1,22 @@
+<div class="winCol">
+  <h2>Notifications</h2>
+  <div class="winCol">
+    @for (data of orders(); track $index) {
+    <div class="noti">
+      <h3>
+        {{ data.name }}
+      </h3>
+      <div>
+        @for (p of data.products; track $index) {
+        <div class="order">
+          <span>
+            {{ p.name }}
+          </span>
+          <span style="width: 64px"> ${{ p.price }} </span>
+        </div>
+        }
+      </div>
+    </div>
+    }
+  </div>
+</div>

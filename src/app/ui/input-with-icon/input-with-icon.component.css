@@ -1,0 +1,17 @@
+div {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    border-radius: 8px;
+    background-color: var(--bg);
+}
+
+input {
+    padding: 0;
+    background-color: var(--bg);
+}
+
+input:focus {
+    outline: none;
+}
